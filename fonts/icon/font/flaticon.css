@@ -5,11 +5,11 @@
 
 @font-face {
   font-family: "Flaticon";
-  src: url("http://html.unifytheme.com/finisy/fonts/icon/font/Flaticon.eot");
-  src: url("http://html.unifytheme.com/finisy/fonts/icon/font/Flaticon.eot?") format("embedded-opentype"),
-       url("http://html.unifytheme.com/finisy/fonts/icon/font/Flaticon.woff") format("woff"),
-       url("http://html.unifytheme.com/finisy/fonts/icon/font/Flaticon.ttf") format("truetype"),
-       url("http://html.unifytheme.com/finisy/fonts/icon/font/Flaticon.svg") format("svg");
+  src: url("Flaticon.eot");
+  src: url("Flaticon.eot?") format("embedded-opentype"),
+       url("Flaticon.woff") format("woff"),
+       url("Flaticon.ttf") format("truetype"),
+       url("Flaticon.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -17,7 +17,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "Flaticon";
-    src: url("http://html.unifytheme.com/finisy/fonts/icon/font/Flaticon.svg") format("svg");
+    src: url("Flaticon.svg") format("svg");
   }
 }
 
