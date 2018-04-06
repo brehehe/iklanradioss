@@ -26,6 +26,10 @@ sosmed_facebook: https://www.facebook.com/surabayaad
 sosmed_twitter: https://twitter.com/Surabaya_Ad
 sosmed_instagram: https://www.instagram.com/surabayaad/
 
+permalink: /:title/
+
+collections:
+
 plugins:
   - jekyll-avatar
   - jekyll-redirect-from

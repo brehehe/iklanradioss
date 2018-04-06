@@ -1,0 +1,28 @@
+---
+layout: home
+this_page: artikel
+link: artikel
+title: Artikel
+---
+
+<!-- 
+			=============================================
+				Our Blog 
+			============================================== 
+-->
+<div class="our-blog blog-inner-page">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-xs-12 blog-details-content">
+				<div class="single-blog">
+					<div class="text">
+						{% for ic in site.posts %}
+							{{ ic.url }} {{ ic.title }}
+						{% endfor %}
+					</div>
+				</div> <!-- /.single-blog -->
+			</div>
+			{% include parts/sidebar.html %}
+		</div> <!-- /.row -->
+	</div>
+</div> <!-- /.our-blog -->

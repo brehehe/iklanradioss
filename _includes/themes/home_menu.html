@@ -19,7 +19,7 @@
 		<div class="header-wrapper clearfix">
 			<!-- Logo -->
 			<div class="logo float-left">
-				<a href="#">
+				<a href="{{ site.url }}" title='{{ site.title }}'>
 					<h1>Iklan Radio Suara Surabaya</h1>
 				</a>
 			</div>
@@ -47,10 +47,15 @@
 						<li {% if page.this_page == 'jadwal-acara' %}class="active"{% endif %}>
 							<a href="{{ site.url }}/jadwal-acara" title='Jadwal Acara Radio Suara Surabaya' class="tran3s">Jadwal Acara</a>
 						</li>
-						<li><a href="{{ site.url }}" class="tran3s">Produksi Iklan</a></li>
-						<li><a href="{{ site.url }}" class="tran3s">Artikel</a></li>
-						<li><a href="{{ site.url }}" class="tran3s">Tentang</a></li>
-						<li><a href="{{ site.url }}" class="tran3s">Kontak</a></li>
+						<li {% if page.this_page == 'produksi-iklan' %}class="active"{% endif %}>
+							<a href="{{ site.url }}/produksi-iklan" title='Produksi Iklan' class="tran3s">Produksi Iklan</a>
+						</li>
+						<li {% if page.this_page == 'artikel' %}class="active"{% endif %}>
+							<a href="{{ site.url }}/artikel" class="tran3s">Artikel</a>
+						</li>
+						<li {% if page.this_page == 'kontak' %}class="active"{% endif %}>
+							<a href="{{ site.url }}/kontak" class="tran3s">Kontak</a>
+						</li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</nav> <!-- /.theme-main-menu -->
