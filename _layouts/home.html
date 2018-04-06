@@ -30,7 +30,29 @@
 		</div> <!-- /.theme-inner-banner -->
 		{% endif %}
 
+		{% if page.types == 'blog' %}
+		<!-- 
+		=============================================
+			Our Blog 
+		============================================== 
+		-->
+		<div class="our-blog blog-inner-page">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-xs-12 blog-details-content">
+						<div class="single-blog">
+							<div class="text">
+								{{ content }}
+							</div>
+						</div> <!-- /.single-blog -->
+					</div>
+					{% include parts/sidebar.html %}
+				</div> <!-- /.row -->
+			</div>
+		</div> <!-- /.our-blog -->
+		{% else %}
 		{{ content }}
+		{% endif %}
 
 		<!-- 
 			=============================================

@@ -17,7 +17,13 @@ title: Artikel
 				<div class="single-blog">
 					<div class="text">
 						{% for ic in site.posts %}
-							{{ ic.url }} {{ ic.title }}
+						<h3>
+							<a href='{{ site.url }}/{{ ic.url }}' title='{{ ic.title }}'>
+								{{ ic.title }}
+							</a>
+						</h3>
+						<p>{{ ic.description }}</p>
+						<hr />
 						{% endfor %}
 					</div>
 				</div> <!-- /.single-blog -->
