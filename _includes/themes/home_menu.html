@@ -41,14 +41,40 @@
 						<li {% if page.this_page == 'home' %}class="active"{% endif %}>
 							<a href="{{ site.url }}" title='{{ site.title }}' class="tran3s">Home</a>
 						</li>
-						<li {% if page.this_page == 'rate-iklan' %}class="active"{% endif %}>
+						<li class="dropdown-holder {% if page.this_page == 'rate-iklan' %}active{% endif %}">
 							<a href="{{ site.url }}/rate-iklan-suara-surabaya-2017" title='Rate Pemasangan Iklan Radio Suara Surabaya 2018' class="tran3s">Rate Iklan</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="{{ site.url }}/produksi-iklan" title="Contoh Produksi Iklan Radio">Produksi Iklan</a>
+								</li>
+							</ul>
 						</li>
 						<li {% if page.this_page == 'jadwal-acara' %}class="active"{% endif %}>
 							<a href="{{ site.url }}/jadwal-acara" title='Jadwal Acara Radio Suara Surabaya' class="tran3s">Jadwal Acara</a>
 						</li>
-						<li {% if page.this_page == 'produksi-iklan' %}class="active"{% endif %}>
-							<a href="{{ site.url }}/produksi-iklan" title='Produksi Iklan' class="tran3s">Produksi Iklan</a>
+						{% assign pktrm = 'Paket Ramadhan Iklan Radio Suara Surabaya' %}
+						<li class="dropdown-holder {% if page.this_page == 'paket-ramadhan' %}active{% endif %}">
+							<a href="#" title='Paket Ramadhan Iklan Radio Suara Surabaya' class="tran3s">Paket Ramadhan</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="{{ site.url }}/paket-ramadhan/paket-khasanah-alquran" title="{{ pktrm }} Paket Khasanah AlQuran">Paket Khasanah AlQuran</a>
+								</li>
+								<li>
+									<a href="{{ site.url }}/paket-ramadhan/paket-khasanah-cari-tahu-yuk" title="{{ pktrm }} Paket Cari Tahu Yuk">Paket Cari Tahu Yuk</a>
+								</li>
+								<li>
+									<a href="{{ site.url }}/paket-ramadhan/paket-khasanah-jejak-sahabat" title="{{ pktrm }} Paket Jejak Sahabat">Paket Jejak Sahabat</a>
+								</li>
+								<li>
+									<a href="{{ site.url }}/paket-ramadhan/paket-mutiara-kisah" title="{{ pktrm }} Paket Mutiara Kisah">Paket Mutiara Kisah</a>
+								</li>
+								<li>
+									<a href="{{ site.url }}/paket-ramadhan/paket-creative-menu" title="{{ pktrm }} Paket Creative Menu">Paket Creative Menu</a>
+								</li>
+								<li>
+									<a href="{{ site.url }}/paket-ramadhan/paket-tasbih-ramadhan" title="{{ pktrm }} Paket Tasbih Ramadhan">Paket Tasbih Ramadhan</a>
+								</li>
+							</ul>
 						</li>
 						<li {% if page.this_page == 'artikel' %}class="active"{% endif %}>
 							<a href="{{ site.url }}/artikel" class="tran3s">Artikel</a>
@@ -56,7 +82,7 @@
 						<li {% if page.this_page == 'kontak' %}class="active"{% endif %}>
 							<a href="{{ site.url }}/kontak" class="tran3s">Kontak</a>
 						</li>
-						
+
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</nav> <!-- /.theme-main-menu -->
