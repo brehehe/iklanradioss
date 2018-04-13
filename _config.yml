@@ -27,6 +27,7 @@ sosmed_facebook: https://www.facebook.com/surabayaad
 sosmed_twitter: https://twitter.com/Surabaya_Ad
 sosmed_instagram: https://www.instagram.com/surabayaad/
 
+#script_post: https://script.google.com/macros/s/AKfycbwo2842yopFKC_zcqdfwE2rEgnWUnwfjkoj4_StNERaipsnyXZi/exec
 script_post: https://script.google.com/macros/s/AKfycbwo2842yopFKC_zcqdfwE2rEgnWUnwfjkoj4_StNERaipsnyXZi/exec
 
 permalink: /:title/
