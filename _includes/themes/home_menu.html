@@ -7,7 +7,7 @@
 <header class="theme-menu-wrapper">
 	<div class="container">
 		<div class="top-header clearfix">
-			<p class="float-left"><a href="{{ site.url }}">Jasa Iklan Radio</a></p>
+			<p class="float-left"><a href="{{ site.url }}">Jasa Agency Iklan Radio</a></p>
 			<ul class="float-right">
 				<li>Hotline &nbsp; <a href="{{ site.url }}" class="tran3s">{{ site.info_whatsapp }}</a></li>
 				<li><a href="{{ site.sosmed_facebook }}" class="tran3s"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -38,8 +38,13 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="navbar-collapse-1">
 					<ul class="nav">
-						<li {% if page.this_page == 'home' %}class="active"{% endif %}>
+						<li class="dropdown-holder {% if page.this_page == 'home' %}active{% endif %}">
 							<a href="{{ site.url }}" title='{{ site.title }}' class="tran3s">Home</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="{{ site.url }}/jadwal-acara" title='Jadwal Acara Radio Suara Surabaya' class="tran3s">Jadwal Acara</a>
+								</li>
+							</ul>
 						</li>
 						<li class="dropdown-holder {% if page.this_page == 'rate-iklan' %}active{% endif %}">
 							<a href="{{ site.url }}/rate-iklan-suara-surabaya-2017" title='Rate Pemasangan Iklan Radio Suara Surabaya 2018' class="tran3s">Rate Iklan</a>
@@ -49,8 +54,31 @@
 								</li>
 							</ul>
 						</li>
-						<li {% if page.this_page == 'jadwal-acara' %}class="active"{% endif %}>
-							<a href="{{ site.url }}/jadwal-acara" title='Jadwal Acara Radio Suara Surabaya' class="tran3s">Jadwal Acara</a>
+						<li class="dropdown-holder {% if page.this_page == 'paket-iklan' %}active{% endif %}">
+							<a href="{{ site.url }}/" title='Paket Iklan Radio Suara Surabaya' class="tran3s">Paket Iklan</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="{{ site.url }}/paket-iklan-radio/adlibs-dan-spot" title="Paket Iklan Radio Adlibs & Spot">Adlibs dan Spot</a>
+								</li>
+								<li>
+									<a href="{{ site.url }}/paket-iklan-radio/talkshow-dan-program" title="Paket Iklan Radio Talkshow dan Program">Talkshow dan Program</a>
+								</li>
+								<li>
+									<a href="{{ site.url }}/paket-iklan-radio/weekend-spot" title="Paket Iklan Radio Weekend Spot">Weekend Spot</a>
+								</li>
+								<li>
+									<a href="{{ site.url }}/paket-iklan-radio/weekend-adlibs-and-spot" title="Paket Iklan Radio Weekend Adlibs dan Spot">Weekend Adlibs dan Spot</a>
+								</li>
+								<li>
+									<a href="{{ site.url }}/paket-iklan-radio/weekend-and-sosmed" title="Paket Iklan Radio Weekend dan SOSMED">Weekend + Sosmed</a>
+								</li>
+								<li>
+									<a href="{{ site.url }}/paket-iklan-radio/website-and-sosmed" title="Paket Iklan Radio Website dan SOSMED">Website + Sosmed</a>
+								</li>
+								<li>
+									<a href="{{ site.url }}/paket-iklan-radio/suara-surabaya-m-radio" title="Paket Iklan Radio Suara Surabaya dan M Radio">Suara surabaya + M Radio</a>
+								</li>
+							</ul>
 						</li>
 						{% assign pktrm = 'Paket Ramadhan Iklan Radio Suara Surabaya' %}
 						<li class="dropdown-holder {% if page.this_page == 'paket-ramadhan' %}active{% endif %}">
