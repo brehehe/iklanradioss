@@ -9,6 +9,25 @@
 		{% if site.url == 'https://iklanradiosuarasurabaya.com' %}
 		<iframe src="https://maps.google.com/maps?q=Jl. Kencanasari Timur XV/6 Surabaya&amp;output=embed&amp;noscroll=1" height="340" width="100%"></iframe>
 		{% endif %}
-		
+		{% assign paket_iklan = false %}
+		{% if page.this_page == 'paket-iklan' %}
+		{% assign paket_iklan = true %}
+		{% endif %}
+		{% if page.this_page == 'rate-iklan' %}
+		{% assign paket_iklan = true %}
+		{% endif %}
+		{% if paket_iklan == true %}
+		<h3>Paket Iklan Radio</h3>
+		<ul>
+			<li>
+				<a href="{{ site.url }}/rate-iklan-suara-surabaya-2017/">Harga Iklan Radio Suara Surabaya 2018</a>
+			</li>
+			{% for e in site.paket_iklan %}
+			<li>
+				<a href="{{ site.url }}/paket-iklan-radio/{{ e.u }}" title="{{ e.t }}">{{ e.t }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+		{% endif %}
 	</div> <!-- /.sidebar-keyword -->
 </div> <!-- /.blog-sidebar -->

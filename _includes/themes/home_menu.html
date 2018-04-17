@@ -57,27 +57,11 @@
 						<li class="dropdown-holder {% if page.this_page == 'paket-iklan' %}active{% endif %}">
 							<a href="{{ site.url }}/" title='Paket Iklan Radio Suara Surabaya' class="tran3s">Paket Iklan</a>
 							<ul class="sub-menu">
+								{% for e in site.paket_iklan %}
 								<li>
-									<a href="{{ site.url }}/paket-iklan-radio/adlibs-dan-spot" title="Paket Iklan Radio Adlibs & Spot">Adlibs dan Spot</a>
+									<a href="{{ site.url }}/paket-iklan-radio/{{ e.u }}" title="{{ e.t }}">{{ e.tm }}</a>
 								</li>
-								<li>
-									<a href="{{ site.url }}/paket-iklan-radio/talkshow-dan-program" title="Paket Iklan Radio Talkshow dan Program">Talkshow dan Program</a>
-								</li>
-								<li>
-									<a href="{{ site.url }}/paket-iklan-radio/weekend-spot" title="Paket Iklan Radio Weekend Spot">Weekend Spot</a>
-								</li>
-								<li>
-									<a href="{{ site.url }}/paket-iklan-radio/weekend-adlibs-and-spot" title="Paket Iklan Radio Weekend Adlibs dan Spot">Weekend Adlibs dan Spot</a>
-								</li>
-								<li>
-									<a href="{{ site.url }}/paket-iklan-radio/weekend-and-sosmed" title="Paket Iklan Radio Weekend dan SOSMED">Weekend + Sosmed</a>
-								</li>
-								<li>
-									<a href="{{ site.url }}/paket-iklan-radio/website-and-sosmed" title="Paket Iklan Radio Website dan SOSMED">Website + Sosmed</a>
-								</li>
-								<li>
-									<a href="{{ site.url }}/paket-iklan-radio/suara-surabaya-m-radio" title="Paket Iklan Radio Suara Surabaya dan M Radio">Suara surabaya + M Radio</a>
-								</li>
+								{% endfor %}
 							</ul>
 						</li>
 						{% assign pktrm = 'Paket Ramadhan Iklan Radio Suara Surabaya' %}
@@ -104,16 +88,16 @@
 								</li>
 							</ul>
 						</li>
-						<li {% if page.this_page == 'artikel' %}class="active"{% endif %}>
-							<a href="{{ site.url }}/artikel" class="tran3s">Artikel</a>
+<li {% if page.this_page == 'artikel' %}class="active"{% endif %}>
+	<a href="{{ site.url }}/artikel" class="tran3s">Artikel</a>
 						</li>
-						<li {% if page.this_page == 'kontak' %}class="active"{% endif %}>
-							<a href="{{ site.url }}/kontak" class="tran3s">Kontak</a>
-						</li>
+<li {% if page.this_page == 'kontak' %}class="active"{% endif %}>
+	<a href="{{ site.url }}/kontak" class="tran3s">Kontak</a>
+</li>
 
-					</ul>
-				</div><!-- /.navbar-collapse -->
-			</nav> <!-- /.theme-main-menu -->
-		</div> <!-- /.header-wrapper -->
-	</div> <!-- /.container -->
+</ul>
+</div><!-- /.navbar-collapse -->
+</nav> <!-- /.theme-main-menu -->
+</div> <!-- /.header-wrapper -->
+</div> <!-- /.container -->
 </header> <!-- /.theme-menu-wrapper -->

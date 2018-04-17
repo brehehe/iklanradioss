@@ -33,6 +33,32 @@ script_post: https://script.google.com/macros/s/AKfycbwo2842yopFKC_zcqdfwE2rEgnW
 permalink: /:title/
 
 collections:
+ 
+paket_iklan: 
+ - t: Paket Iklan Radio Adlibs & Spot
+   u: adlibs-dan-spot
+   tm: Adlibs dan Spot
+ - t: Paket Iklan Radio Talkshow dan Program
+   u: talkshow-dan-program
+   tm: Talkshow dan Program
+ - t: Paket Iklan Radio Weekend Spot
+   u: weekend-spot
+   tm: Weekend Spot
+ - t: Paket Iklan Radio Weekend Adlibs dan Spot
+   u: weekend-adlibs-and-spot
+   tm: Weekend Adlibs dan Spot
+ - t: Paket Iklan Radio Weekend dan SOSMED
+   u: weekend-and-sosmed
+   tm: Weekend & Sosmed
+ - t: Paket Iklan Radio Website dan SOSMED
+   u: website-and-sosmed
+   tm: Website & Sosmed
+ - t: Paket Iklan Radio Suara Surabaya dan M Radio
+   u: suara-surabaya-m-radio
+   tm: Suara Surabaya & M Radio
+ - t: Paket Iklan Radio Suara Surabaya dan SHE Radio
+   u: suara-surabaya-she-radio
+   tm: Suara Surabaya & SHE Radio
 
 plugins:
   - jekyll-avatar

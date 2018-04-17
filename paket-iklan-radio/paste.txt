@@ -1,0 +1,5 @@
+<tr><td>Bentuk</td><td></td></tr>
+<tr><td>Total Tayang</td><td></td></tr>
+<tr><td>Frekuensi</td><td></td></tr>
+
+<table class="table table-responsive table-striped">
