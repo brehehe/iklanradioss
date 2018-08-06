@@ -43,10 +43,10 @@ paket_iklan:
    tm: Talkshow dan Program
  - t: Paket Iklan Radio Weekend Spot
    u: weekend-spot
-   tm: Weekend Spot
- - t: Paket Iklan Radio Weekend Adlibs dan Spot
-   u: weekend-adlibs-and-spot
    tm: Weekend Adlibs dan Spot
+# - t: Paket Iklan Radio Weekend Adlibs dan Spot
+#   u: weekend-adlibs-and-spot
+#   tm: Weekend Adlibs dan Spot
  - t: Paket Iklan Radio Weekend dan SOSMED
    u: weekend-and-sosmed
    tm: Weekend & Sosmed
