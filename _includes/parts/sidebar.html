@@ -1,36 +1,36 @@
 <div class="col-md-4 col-sm-6 col-xs-12 blog-sidebar">
-	<div class="sidebar-keyword">
-		<h3>Kontak dan Informasi</h3>
-                <h5>&#9743; &nbsp; <a href="https://api.whatsapp.com/send?phone={{ site.info_whatsapp }}">{{ site.info_whatsapp }}</a></h5>
-                <h5>&#9743; &nbsp; <a href="https://api.whatsapp.com/send?phone={{ site.info_whatsapp2 }}">{{ site.info_whatsapp2 }}</a></h5>
-		<h5>&#9743; &nbsp; {{ site.info_tel1 }}</h5>
-		<!-- <h5>&#9743; &nbsp; 081 831 0004</h5> -->
-		<h3>Alamat</h3>
-		<h5>{{ site.info_alamat }}</h5>
-		{% if site.url == 'https://iklanradiosuarasurabaya.com' %}
-		<iframe src="https://maps.google.com/maps?q=Jl. Kencanasari Timur XV/6 Surabaya&amp;output=embed&amp;noscroll=1" height="340" width="100%"></iframe>
-		{% endif %}
-		{% assign paket_iklan = false %}
-		{% if page.this_page == 'paket-iklan' %}
-		{% assign paket_iklan = true %}
-		{% endif %}
-		{% if page.this_page == 'rate-iklan' %}
-		{% assign paket_iklan = true %}
-		{% endif %}
-		{% if paket_iklan == true %}
-		<h3>Paket Iklan Radio</h3>
-		<ul>
-			<li>
-				<a href="{{ site.url }}/rate-iklan-suara-surabaya-2017/">Harga Iklan Radio Suara Surabaya 2018</a>
-			</li>
-			{% for e in site.paket_iklan %}
-			<li>
-				<a href="{{ site.url }}/paket-iklan-radio/{{ e.u }}" title="{{ e.t }}">{{ e.t }}</a>
-			</li>
-			{% endfor %}
-		</ul>
-		{% endif %}
-		<h3>Facebook Agen Iklan Radio Suara Surabaya</h3>
-		<div class="fb-page" data-href="https://www.facebook.com/Pasang-Iklan-Radio-Suara-Surabaya-149523209213232/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Pasang-Iklan-Radio-Suara-Surabaya-149523209213232/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Pasang-Iklan-Radio-Suara-Surabaya-149523209213232/">Pasang Iklan Radio Suara Surabaya</a></blockquote></div>
-	</div> <!-- /.sidebar-keyword -->
+  <div class="sidebar-keyword">
+    <h3>Kontak dan Informasi</h3>
+    <h5>&#9743; &nbsp; <a href="https://api.whatsapp.com/send?phone={{ site.info_whatsapp }}">{{ site.info_whatsapp }}</a></h5>
+    <!-- <h5>&#9743; &nbsp; <a href="https://api.whatsapp.com/send?phone={{ site.info_whatsapp2 }}">{{ site.info_whatsapp2 }}</a></h5> -->
+    <h5>&#9743; &nbsp; {{ site.info_tel1 }}</h5>
+    <!-- <h5>&#9743; &nbsp; 081 831 0004</h5> -->
+    <h3>Alamat</h3>
+    <h5>{{ site.info_alamat }}</h5>
+    {% if site.url == 'https://iklanradiosuarasurabaya.com' %}
+    <iframe src="https://maps.google.com/maps?q=Jl. Kencanasari Timur XV/6 Surabaya&amp;output=embed&amp;noscroll=1" height="340" width="100%"></iframe>
+    {% endif %}
+    {% assign paket_iklan = false %}
+    {% if page.this_page == 'paket-iklan' %}
+    {% assign paket_iklan = true %}
+    {% endif %}
+    {% if page.this_page == 'rate-iklan' %}
+    {% assign paket_iklan = true %}
+    {% endif %}
+    {% if paket_iklan == true %}
+    <h3>Paket Iklan Radio</h3>
+    <ul>
+      <li>
+        <a href="{{ site.url }}/rate-iklan-suara-surabaya-2017/">Harga Iklan Radio Suara Surabaya 2018</a>
+      </li>
+      {% for e in site.paket_iklan %}
+      <li>
+        <a href="{{ site.url }}/paket-iklan-radio/{{ e.u }}" title="{{ e.t }}">{{ e.t }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    <h3>Facebook Agen Iklan Radio Suara Surabaya</h3>
+    <div class="fb-page" data-href="https://www.facebook.com/Pasang-Iklan-Radio-Suara-Surabaya-149523209213232/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Pasang-Iklan-Radio-Suara-Surabaya-149523209213232/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Pasang-Iklan-Radio-Suara-Surabaya-149523209213232/">Pasang Iklan Radio Suara Surabaya</a></blockquote></div>
+  </div> <!-- /.sidebar-keyword -->
 </div> <!-- /.blog-sidebar -->
